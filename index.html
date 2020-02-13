@@ -7,10 +7,10 @@
     <title>Where to find love this Valentine's Day - BNHR</title>
 
     <meta property="og:description" content="Looking for love this Valentine's? &#10084;">
-    <meta property="og:image" content="static/img/BNHR-val-map.png"/>
+    <meta property="og:image" content="static/img/val-map.png"/>
 
     <meta name="twitter:description" content="Looking for love this Valentine's? &#10084;">
-    <meta name="twitter:image" content="static/img/BNHR-val-map.png"/>
+    <meta name="twitter:image" content="static/img/val-map.png"/>
 
     <!-- Normalize -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
@@ -43,24 +43,25 @@
 
 <body>
     <div id='map'></div>
+    <button type='button' class='btn shadow-sm' id='search-btn'>Toggle Search</button>
     <div id='filter-ctrl' class='form-group shadow'>
-        <h2 class='c0'>Where to find love this Valentine's Day</h2>
+        <h2 class='c0 mt-4 pt-1' style='text-shadow: 0 0 5px #ffffff'>Where to find love this Valentine's Day</h2>
         <br>
         <h5>I'm looking for a</h5>
-        <select class='form-control' id='status'>
+        <select class='form-control form-control-sm' id='status'>
             <option value='Single' selected='selected'>Single</option>
             <option value='Widowed'>Widowed</option>
             <option value='Separated'>Separated</option>
         </select>
         <br>
-        <select class='form-control' id='gender'>
+        <select class='form-control form-control-sm' id='gender'>
             <option value='Male'>Male</option>
             <option value='Female'>Female</option>
             <option value='Both Sexes' selected='selected'>Doesn't Matter</option>
         </select>
         <br>
         <h5>Age</h5>
-        <select class='form-control' id='age'>
+        <select class='form-control form-control-sm' id='age'>
             <option value='< 20'>< 20</option>
             <option value='20 - 24'>20 - 24</option>
             <option value='25 - 29'>25 - 29</option>

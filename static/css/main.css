@@ -8,10 +8,17 @@
 
 #filter-ctrl {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    padding: 20px;
+    top: 4px;
+    left: 4px;
+    padding: 10px;
     z-index: 1;
+}
+
+#search-btn {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 2;
 }
 
 .c0 {

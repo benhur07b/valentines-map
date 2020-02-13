@@ -4,6 +4,10 @@ document.getElementById('status').onchange = function() {updateMap()};
 document.getElementById('gender').onchange = function() {updateMap()};
 document.getElementById('age').onchange = function() {updateMap()};
 
+$('#search-btn').click(function(){
+    $('#filter-ctrl').toggle();
+});
+
 function updateMap() {
     map.fire('closepopup')
     map.setPaintProperty('status',
