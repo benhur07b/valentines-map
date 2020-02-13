@@ -1,0 +1,39 @@
+#map {
+    /* height: 600px; */
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#filter-ctrl {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 20px;
+    z-index: 1;
+}
+
+.c0 {
+    color: #ff8896;
+}
+
+.c1 {
+    color: #ffdee3;
+}
+
+.c2 {
+    color: #ffbbc1;
+}
+
+.c3 {
+    color: #ff6f77;
+}
+
+.c4 {
+    color: #ff3334;
+}
+
+.c5 {
+    color: #c00000;
+}

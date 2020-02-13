@@ -1,0 +1,92 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>Where to find love this Valentine's Day - BNHR</title>
+
+    <meta property="og:description" content="Looking for love this Valentine's? &#10084;">
+    <meta property="og:image" content="static/img/BNHR-val-map.png"/>
+
+    <meta name="twitter:description" content="Looking for love this Valentine's? &#10084;">
+    <meta name="twitter:image" content="static/img/BNHR-val-map.png"/>
+
+    <!-- Normalize -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
+
+    <!-- jQuery -->
+    <script src='https://code.jquery.com/jquery-3.4.1.slim.min.js' integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n' crossorigin='anonymous'></script>
+
+    <!-- Bootstrap CSS-->
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
+
+    <!-- Popper.js -->
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous'></script>
+
+    <!-- Bootstrap JS -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous'></script>
+
+    <!-- Mapbox -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css' rel='stylesheet' />
+
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'
+    integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo'
+    crossorigin='anonymous'></script>
+
+    <!-- LESS -->
+    <!-- <link rel='stylesheet/less' type='text/css' href='static/css/main.less' />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script> -->
+    <link rel='stylesheet' type='text/css' href='static/css/main.css' />
+</head>
+
+<body>
+    <div id='map'></div>
+    <div id='filter-ctrl' class='form-group shadow'>
+        <h2 class='c0'>Where to find love this Valentine's Day</h2>
+        <br>
+        <h5>I'm looking for a</h5>
+        <select class='form-control' id='status'>
+            <option value='Single' selected='selected'>Single</option>
+            <option value='Widowed'>Widowed</option>
+            <option value='Separated'>Separated</option>
+        </select>
+        <br>
+        <select class='form-control' id='gender'>
+            <option value='Male'>Male</option>
+            <option value='Female'>Female</option>
+            <option value='Both Sexes' selected='selected'>Doesn't Matter</option>
+        </select>
+        <br>
+        <h5>Age</h5>
+        <select class='form-control' id='age'>
+            <option value='< 20'>< 20</option>
+            <option value='20 - 24'>20 - 24</option>
+            <option value='25 - 29'>25 - 29</option>
+            <option value='30 - 34'>30 - 34</option>
+            <option value='35 - 39'>35 - 39</option>
+            <option value='40 - 44'>40 - 44</option>
+            <option value='45 - 49'>45 - 49</option>
+            <option value='50 - 54'>50 - 54</option>
+            <option value='55 - 59'>55 - 59</option>
+            <option value='60 - 64'>60 - 64</option>
+            <option value='65 - 69'>65 - 69</option>
+            <option value='70 - 74'>70 - 74</option>
+            <option value='75 - 79'>75 - 79</option>
+            <option value='> 80'>> 80</option>
+            <option value='Total' selected='selected'>Doesn't Matter</option>
+        </select>
+        <br>
+            <img class='img-fluid col-12' src='static/img/color-ramp.png' style='max-width: 600px'>
+            <div class='d-flex justify-content-between small'>
+                <div class="d-flex">LOW CHANCE</div>
+                <div class="d-flex">HIGH CHANCE</div>
+            </div>
+            <br>
+            <p class='small'><i>Source: Philippine Statistics Authority, 2015 Census of Population<i></p>
+        </div>
+    </div>
+    <script src='static/js/main.js'></script>
+</body>
+</html>
